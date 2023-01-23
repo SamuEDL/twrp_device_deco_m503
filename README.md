@@ -1,5 +1,5 @@
-# twrp_device_doogee_x5max
-TWRP device tree for Doogee X5 MAX
+# twrp_device_deco_m503
+TWRP device tree for Deco M503
 
 ## Device specification
 
@@ -9,9 +9,9 @@ CPU     | QuadCore (4 x 1,5Ghz Cortex-A7)
 CHIPSET | MediaTek MT6580
 GPU     | Mali 400 MP GPU
 Memory  | 1GB
-Android Version | 6.0
-Storage | 16GB
-Battery | 4000 mAh
+Android Version | 7.0
+Storage | 8GB
+Battery | 2000 mAh
 Display | 720 x 1280
 Rear Camera  | 8 MP
 Front Camera | 5 MP
@@ -29,19 +29,19 @@ repo sync
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="https://github.com/SamuEDL/twrp_device_doogee_x5max" remote="github" revision="master" />
+<project path="https://github.com/SamuEDL/twrp_device_deco_m503" remote="github" revision="master" />
 ```
 
 Finally execute these:
 
 ```
 . build/envsetup.sh
-lunch omni_w370-eng
+lunch omni_m503-eng
 mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
 ```
 
 To test it:
 
 ```
-fastboot boot out/target/product/w370/recovery.img
+fastboot boot out/target/product/m503/recovery.img
 ```
