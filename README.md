@@ -22,14 +22,14 @@ Front Camera | 5 MP
 First checkout minimal twrp with omnirom tree:
 
 ```
-repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
+repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
 repo sync
 ```
 
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="https://github.com/SamuEDL/twrp_device_deco_m503" remote="github" revision="master" />
+<project path="https://github.com/SamuEDL/twrp_device_deco_m503" remote="github" revision="main" />
 ```
 
 Finally execute these:
